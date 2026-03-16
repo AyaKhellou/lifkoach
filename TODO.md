@@ -1,1 +1,1 @@
-2. [x] Create .gitignore&#10;3. [x] Create README.md
+# GitHub Push TODO&#10;1. [ ] Install GitHub CLI (gh)&#10;2. [x] Create .gitignore&#10;3. [x] Create README.md&#10;4. [x] git init, add, commit&#10;5. [ ] gh repo create & push&#10;6. [ ] Build CSS & test
