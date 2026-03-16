@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header class="flex items-center justify-between w-full py-4 px-10 bg-background-color relative">
+        <a href="/"><img class="w-36 mr-4" src="./assets/images/Logo(1).png" alt="Lifkoach Logo"></a>
+        <nav class="flex items-center gap-10 max-md:hidden max-md:flex-col max-md:gap-4 max-md:absolute max-md:top-14 max-md:bg-white max-md:shadow max-md:p-6 max-md:rounded-xl max-md:mr-3 max-md:right-0">
+            <ul class="flex items-center gap-6 text-base font-medium text-writing-color max-md:flex-col max-md:gap-4 ">
+                <li class="hover:text-accent-color transition-all duration-300"><a href="/">Home</a></li>
+                <li class="text-accent-color transition-all duration-300"><a href="/services.html">Services</a></li>
+                <li class="hover:text-accent-color transition-all duration-300"><a href="/blogs.html">Blog</a></li>
+                <li class="hover:text-accent-color transition-all duration-300"><a href="/contact.html">Contact</a></li>
+            </ul>
+        <button class="btn-style max-md:mt-4">
+            <a href="/services.html">Get Started</a>
+        </button>
+        </nav>
+        <div class="burger-list w-6 cursor-pointer md:hidden">
+            <span class="block w-full h-0.5 bg-accent-color mb-1"></span>
+            <span class="block w-full h-0.5 bg-accent-color mb-1"></span>
+            <span class="block w-full h-0.5 bg-accent-color"></span>
+        </div>
+    </header>
+    <!-- intro -->
+    <section class="intro bg-background-color py-16 px-16 max-sm:px-6 flex flex-col items-center gap-6 text-center">
+        <h2 class="heading-2 fade-in-bottom w-1/2 max-md:w-2/3 max-sm:w-full">Transform Your Life with Our Coaching Services</h2>
+        <p class="description fade-in-bottom w-1/2 max-md:w-2/3 max-sm:w-full">Discover personalized coaching programs designed to help you unlock your potential and achieve your goals.</p>
+    </section>
+    <section class="services py-16 px-16 max-sm:px-6">
+        <h2 class="heading-2 "
+        data-aos="fade-right"
+    data-aos-duration="1000">Our Coaching Services</h2>
+        <div class="service-card"
+        data-aos="fade-up"
+    data-aos-duration="1000">
+            <i 
+            data-lucide="circle-check" 
+            class="w-12 h-auto fill-accent-color stroke-white"></i>
+            <h3 class="heading-3 mb-0!">Life Coaching</h3>
+            <p class="description">
+                Comprehensive coaching program designed to help you identify and achieve your personal and professional goals through personalized one-on-one sessions.
+            </p>
+            <h4 class="font-primary text-xl font-semibold text-writing-color">What's Included</h4>
+            <div class="">
+                <ul class="flex flex-col gap-4">
+                    <li class="flex items-center">
+                        <i data-lucide="circle-check" class="h-auto min-w-8 fill-accent-color/40 stroke-accent-color mr-2 inline-block"></i>
+                        <p class="description">Weekly 60-minute coaching sessions</p>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="circle-check" class="h-auto min-w-8 fill-accent-color/40 stroke-accent-color mr-2 inline-block"></i>
+                        <p class="description">Personalized goal-setting framework</p>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="circle-check" class="h-auto min-w-8 fill-accent-color/40 stroke-accent-color mr-2 inline-block"></i>
+                        <p class="description">Action plan development</p>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="circle-check" class="h-auto min-w-8 fill-accent-color/40 stroke-accent-color mr-2 inline-block"></i>
+                        <p class="description">Progress tracking and accountability</p>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="circle-check" class="h-auto min-w-8 fill-accent-color/40 stroke-accent-color mr-2 inline-block"></i>
+                        <p class="description">Email support between sessions</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+            <div class="service-card"
+            data-aos="fade-up"
+    data-aos-duration="1000">
+            <i 
+            data-lucide="circle-check" 
+            class="w-12 h-12 fill-accent-color stroke-white"></i>
+            <h3 class="heading-3 mb-0!">Career Coaching</h3>
+            <p class="description">
+                Expert guidance through career transitions, helping you discover your passion, develop your skills, and reach your full professional potential.
+            </p>
+            <h4 class="font-primary text-xl font-semibold text-writing-color">What's Included</h4>
+            <div class="">
+                <ul class="flex flex-col gap-4">
+                    <li class="flex items-center">
+                        <i data-lucide="circle-check" class="min-w-8 h-auto fill-accent-color/40 stroke-accent-color mr-2 inline-block"></i>
+                        <p class="description">Career assessment and planning</p>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="circle-check" class="min-w-8 h-auto fill-accent-color/40 stroke-accent-color mr-2 inline-block"></i>
+                        <p class="description">Resume and LinkedIn optimization</p>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="circle-check" class="min-w-8 h-auto fill-accent-color/40 stroke-accent-color mr-2 inline-block"></i>
+                        <p class="description">Interview preparation</p>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="circle-check" class="min-w-8 h-auto fill-accent-color/40 stroke-accent-color mr-2 inline-block"></i>
+                        <p class="description">Networking strategies</p>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="circle-check" class="min-w-8 h-auto fill-accent-color/40 stroke-accent-color mr-2 inline-block"></i>
+                        <p class="description">Salary negotiation coaching</p>
+                    </li>
+                </ul>
+            </div>
+            </div>
+
+            <div class="service-card"
+            data-aos="fade-up"
+    data-aos-duration="1000">
+            <i 
+            data-lucide="circle-check" 
+            class="w-12 h-12 fill-accent-color stroke-white"></i>
+            <h3 class="heading-3 mb-0!">Mindfulness Coaching</h3>
+            <p class="description">
+                Learn powerful mindfulness techniques to reduce stress, improve focus, and enhance your overall well-being through guided practice and support.
+            </p>
+            <h4 class="font-primary text-xl font-semibold text-writing-color">What's Included</h4>
+            <div class="">
+                <ul class="flex flex-col gap-4">
+                    <li class="flex items-center">
+                        <i data-lucide="circle-check" class="min-w-8 h-auto fill-accent-color/40 stroke-accent-color mr-2 inline-block"></i>
+                        <p class="description">Meditation instruction</p>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="circle-check" class="min-w-8 h-auto fill-accent-color/40 stroke-accent-color mr-2 inline-block"></i>
+                        <p class="description">Stress management techniques</p>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="circle-check" class="min-w-8 h-auto fill-accent-color/40 stroke-accent-color mr-2 inline-block"></i>
+                        <p class="description">Breathing exercises</p>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="circle-check" class="min-w-8 h-auto fill-accent-color/40 stroke-accent-color mr-2 inline-block"></i>
+                        <p class="description">Daily mindfulness practices</p>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="circle-check" class="min-w-8 h-auto fill-accent-color/40 stroke-accent-color mr-2 inline-block"></i>
+                        <p class="description">Guided audio sessions</p>
+                    </li>
+                </ul>
+            </div>
+            </div>
+
+            <div class="service-card"
+            data-aos="fade-up"
+    data-aos-duration="1000">
+            <i 
+            data-lucide="circle-check" 
+            class="w-12 h-12 fill-accent-color stroke-white"></i>
+            <h3 class="heading-3 mb-0!">Group Coaching</h3>
+            <p class="description">
+                Join a supportive community of like-minded individuals working towards similar goals in our transformative group coaching programs.
+            </p>
+            <h4 class="font-primary text-xl font-semibold text-writing-color">What's Included</h4>
+            <div class="">
+                <ul class="flex flex-col gap-4">
+                    <li class="flex items-center">
+                        <i data-lucide="circle-check" class="min-w-8 h-auto fill-accent-color/40 stroke-accent-color mr-2 inline-block"></i>
+                        <p class="description">Bi-weekly group sessions</p>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="circle-check" class="min-w-8 h-auto fill-accent-color/40 stroke-accent-color mr-2 inline-block"></i>
+                        <p class="description">Community support network</p>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="circle-check" class="min-w-8 h-auto fill-accent-color/40 stroke-accent-color mr-2 inline-block"></i>
+                        <p class="description">Group workshops and exercises</p>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="circle-check" class="min-w-8 h-auto fill-accent-color/40 stroke-accent-color mr-2 inline-block"></i>
+                        <p class="description">Shared accountability</p>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="circle-check" class="min-w-8 h-auto fill-accent-color/40 stroke-accent-color mr-2 inline-block"></i>
+                        <p class="description">Access to online resources</p>
+                    </li>
+                </ul>
+            </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="pricing bg-background-color py-16 px-16 max-sm:px-6 flex flex-col items-center gap-6">
+        <h2 class="heading-2 w-1/2 max-md:w-full text-center"
+        data-aos="fade-up"
+    data-aos-duration="1000">Simple, Transparent Pricing</h2>
+        <p class="description w-1/2 max-md:w-full text-center"
+        data-aos="fade-up"
+    data-aos-duration="1000">Choose the coaching package that best fits your needs and start your journey towards personal growth and success.</p>
+        <div class="pricing-cards flex max-md:flex-col justify-center gap-4 mt-10">
+            <div class="pricing-card w-1/3 max-md:w-full mt-10 bg-white rounded-md shadow-lg flex flex-col gap-10 p-10"
+            data-aos="zoom-in">
+                <h3 class="heading-3 mb-0!">Single Session</h3>
+                <p><span class="heading-2 font-bold">$150</span> / session</p>
+                <div class="separator bg-secondary-writing-color/30 w-full h-px"></div>
+                <ul class="flex flex-col gap-7">
+                    <li class="flex items-center">
+                        <i data-lucide="circle-check" class="min-w-6 h-6 fill-accent-color/40 stroke-accent-color mr-2 inline-block"></i>
+                        <p class="description">One 60-minute coaching session</p>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="circle-check" class="min-w-6 h-6 fill-accent-color/40 stroke-accent-color mr-2 inline-block"></i>
+                        <p class="description">Goal-setting framework</p>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="circle-check" class="min-w-6 h-6 fill-accent-color/40 stroke-accent-color mr-2 inline-block"></i>
+                        <p class="description">Action plan</p>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="circle-check" class="min-w-6 h-6 fill-accent-color/40 stroke-accent-color mr-2 inline-block"></i>
+                        <p class="description">Follow-up email summary</p>
+                    </li>
+                </ul>
+                <button class="btn-style">Book Now</button>
+            </div>
+            <div class="pricing-card w-1/3 max-md:w-full bg-accent-color rounded-md shadow-lg flex flex-col gap-10 p-10 relative overflow-hidden"
+            data-aos="zoom-in">
+                <div class="popular bg-brand font-primary text-white font-semibold px-4 py-2 w-fit absolute top-0 right-0 rounded-bl-md">Most Popular</div>
+                <h3 class="heading-3 mb-0! text-white">Monthly Package</h3>
+                <p class="text-white"><span class="heading-2 text-white font-bold">$500</span> / month</p>
+                <div class="separator bg-white/30 w-full h-px"></div>
+                <ul class="flex flex-col gap-7">
+                    <li class="flex items-center">
+                        <i data-lucide="circle-check" class="min-w-6 h-6 fill-white/20 stroke-white mr-2 inline-block"></i>
+                        <p class="description text-white">4 coaching sessions per month</p>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="circle-check" class="min-w-6 h-6 fill-white/20 stroke-white mr-2 inline-block"></i>
+                        <p class="description text-white">Personalized action plans</p>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="circle-check" class="min-w-6 h-6 fill-white/20 stroke-white mr-2 inline-block"></i>
+                        <p class="description text-white">Email support</p>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="circle-check" class="min-w-6 h-6 fill-white/20 stroke-white mr-2 inline-block"></i>
+                        <p class="description text-white">Progress tracking</p>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="circle-check" class="w-6 h-6 fill-white/20 stroke-white mr-2 inline-block"></i>
+                        <p class="description text-white">Resource materials</p>
+                    </li>
+                </ul>
+                <button class="btn-style bg-white text-accent-color  hover:bg-white/50 hover:text-white transition duration-200 ease-in-out">Book Now</button>
+            </div>
+            <div class="pricing-card w-1/3 max-md:w-full mt-10 bg-white rounded-md shadow-lg flex flex-col gap-10 p-10"
+            data-aos="zoom-in">
+                <h3 class="heading-3 mb-0!">Quarterly Program</h3>
+                <p><span class="heading-2 font-bold">$1,350</span> / 3 months</p>
+                <div class="separator bg-secondary-writing-color/30 w-full h-px"></div>
+                <ul class="flex flex-col gap-7">
+                    <li class="flex items-center">
+                        <i data-lucide="circle-check" class="min-w-6 h-6 fill-accent-color/40 stroke-accent-color mr-2 inline-block"></i>
+                        <p class="description">12 coaching sessions</p>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="circle-check" class="min-w-6 h-6 fill-accent-color/40 stroke-accent-color mr-2 inline-block"></i>
+                        <p class="description">Comprehensive goal framework</p>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="circle-check" class="min-w-6 h-6 fill-accent-color/40 stroke-accent-color mr-2 inline-block"></i>
+                        <p class="description">Unlimited email support</p>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="circle-check" class="min-w-6 h-6 fill-accent-color/40 stroke-accent-color mr-2 inline-block"></i>
+                        <p class="description">Monthly progress reviews</p>
+                    </li>
+                    <li class="flex items-center">
+                        <i data-lucide="circle-check" class="min-w-6 h-6 fill-accent-color/40 stroke-accent-color mr-2 inline-block"></i>
+                        <p class="description">Exclusive resources</p>
+                    </li>
+                </ul>
+                <button class="btn-style">Book Now</button>
+            </div>
+        </div>
+    </section>
+    <section class="how-works px-16 py-16 max-sm:px-6 bg-white flex max-lg:flex-col gap-16 items-center max-lg:items-start overflow-hidden">
+        <div class="title" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="heading-2">How Our Coaching Process Works</h2>
+            <p class="description">Our proven coaching process is designed to help you achieve sustainable, long-term results.</p>
+        </div>
+        <div class="steps flex flex-col gap-10">
+            <div class="step flex gap-8 items-center" data-aos="fade-left">
+                <span class="number heading-2 text-white bg-accent-color w-20 max-sm:w-12 h-auto aspect-square flex items-center justify-center rounded-full">01</span>
+                <div class="step-details flex-1">
+                    <h3 class="heading-3">Free Consultation</h3>
+                    <p class="description">Schedule a complimentary 30-minute discovery call to discuss your goals and determine if coaching is right for you.</p>
+                </div>
+            </div>
+            <div class="step flex gap-8 items-center" data-aos="fade-left">
+                <span class="number heading-2 text-white bg-accent-color w-20 max-sm:w-12 h-auto aspect-square flex items-center justify-center rounded-full">02</span>
+                <div class="step-details flex-1">
+                    <h3 class="heading-3">Goal Setting</h3>
+                    <p class="description">Work together to identify your specific goals and create a personalized coaching plan tailored to your needs.</p>
+                </div>
+            </div>
+            <div class="step flex gap-8 items-center" data-aos="fade-left">
+                <span class="number heading-2 text-white bg-accent-color w-20 max-sm:w-12 h-auto aspect-square flex items-center justify-center rounded-full">03</span>
+                <div class="step-details flex-1">
+                    <h3 class="heading-3">Regular Sessions</h3>
+                    <p class="description">Meet regularly for coaching sessions where we'll work on strategies, overcome obstacles, and track your progress.</p>
+                </div>
+            </div>
+            <div class="step flex gap-8 items-center" data-aos="fade-left">
+                <span class="number heading-2 text-white bg-accent-color w-20 max-sm:w-12 h-auto aspect-square flex items-center justify-center rounded-full">04</span>
+                <div class="step-details flex-1">
+                    <h3 class="heading-3">Achieve Results</h3>
+                    <p class="description">Celebrate your achievements as you reach milestones and transform into the best version of yourself.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="FAQ bg-background-color py-16 px-16 max-sm:px-6">
+        <h2 class="heading-2 text-center" data-aos="fade-up" data-aos-duration="1000">Frequently Asked Questions</h2>
+        <div class="questions flex flex-col gap-10 mt-10">
+            <div class="question-card bg-white rounded-md shadow-lg p-8" data-aos="fade-up" data-aos-duration="1000">
+                <h3 class="heading-3">How long is each coaching session?</h3>
+                <p class="description">Each coaching session is 60 minutes long. This gives us enough time to dive deep into your goals, challenges, and action plans while maintaining focus and energy throughout the session.</p>
+            </div>
+            <div class="question-card bg-white rounded-md shadow-lg p-8" data-aos="fade-up" data-aos-duration="1000">
+                <h3 class="heading-3">Can I switch between coaching programs?</h3>
+                <p class="description">Yes, you can switch between programs at any time. We understand that your needs may change, and we're flexible to adjust your coaching plan accordingly.</p>
+            </div>
+            <div class="question-card bg-white rounded-md shadow-lg p-8" data-aos="fade-up" data-aos-duration="1000">
+                <h3 class="heading-3">What if I need to cancel or reschedule?</h3>
+                <p class="description">We require 24 hours notice for cancellations or rescheduling. Sessions cancelled with less than 24 hours notice will be counted as completed sessions.</p>
+            </div>
+            <div class="question-card bg-white rounded-md shadow-lg p-8" data-aos="fade-up" data-aos-duration="1000">
+                <h3 class="heading-3">Do you offer virtual coaching sessions?</h3>
+                <p class="description">Yes! All our coaching sessions are available both in-person and virtually via video call, giving you the flexibility to choose what works best for you.</p>
+            </div>
+            <div class="question-card bg-white rounded-md shadow-lg p-8" data-aos="fade-up" data-aos-duration="1000">
+                <h3 class="heading-3">How quickly will I see results?</h3>
+                <p class="description">Results vary by individual and depend on your goals, commitment level, and circumstances. Most clients report noticeable improvements within 4-6 weeks of consistent coaching.</p>
+            </div>
+            <div class="question-card bg-white rounded-md shadow-lg p-8" data-aos="fade-up" data-aos-duration="1000">
+                <h3 class="heading-3">Do you offer refunds?</h3>
+                <p class="description">We offer a satisfaction guarantee for your first session. If you're not completely satisfied, we'll provide a full refund. For packages, refunds are prorated based on unused sessions.</p>
+            </div>
+        </div>
+    </section>
+    <section class="CTA bg-white flex flex-col items-center gap-8 py-16 px-16 max-sm:px-6 relative"data-aos="fade-up" data-aos-duration="1000">
+        <img 
+        src="./assets/images/CTA-overlay.png" 
+        alt="CTA Background Overlay"
+        class="absolute bottom-0 z-0">
+        <h2 class="heading-2 relative z-10 text-center">Become the Best Version of Yourself</h2>
+        <p class="description w-2/3 max-md:w-full text-center relative z-10">
+            We are here to help you reach your goals. Sign up for a free consultation today to
+            discover how we can help you on your journey.
+        </p>
+        <button class="btn-style mt-6 z-10">Book a free call</button>
+    </section>
+    <footer class="bg-footer text-white py-8 px-16 max-md:px-8 max-sm:px-4 relative overflow-hidden flex flex-col">
+        <img src="./assets/images/Background-Overlay-footer.png" class="absolute bottom-0 left-0 z-0" alt="">
+        <div class="z-10 links">
+            <ul class="text-white font-primary text-base font-light flex max-sm:flex-wrap max-sm:justify-center items-center justify-end gap-6 pt-4 pb-16">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/services.html">Services</a></li>
+                <li><a href="/blogs.html">Blog</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="separator w-full h-px bg-white"></div>
+        <div class="z-10 details flex max-md:flex-wrap items-start justify-center pt-16 gap-10">
+            <div class="support z-10 w-1/4 max-md:w-[45%] max-sm:w-full">
+                <h3 class="font-primary text-2xl font-medium mb-6">Support</h3>
+                <ul class="flex flex-col gap-4">
+                    <li>Help Center</li>
+                    <li>Privacy Policy</li>
+                    <li>FAQ</li>
+                    <li>Terms & Conditions</li>
+                    <li>Community</li>
+                </ul>
+            </div>
+            <div class="z-10 contact w-1/4 max-md:w-[45%] max-sm:w-full">
+                <h3 class=" font-primary text-2xl font-medium mb-4">Contact</h3>
+                <div class="contact-details flex flex-col gap-6">
+                    <div class="location flex items-center gap-3">
+                        <i data-lucide="map-pin" class="min-w-6 min-h-6 text-accent-color"></i>
+                        <span class="">Jl. Umalas 1 No.3, Kerobokan Kelod, Badung, Bali</span>
+                    </div>
+                    <div class="phone flex items-center gap-3">
+                        <i data-lucide="phone" class="min-w-6 min-h-6 text-accent-color"></i>
+                        <span>+62 812 3456 7890</span>
+                    </div>
+                    <div class="mail flex items-center gap-3">
+                        <i data-lucide="mail" class="min-w-6 min-h-6 text-accent-color"></i>
+                        <span>info@lifkoach.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="community w-1/2 z-10 max-md:w-full">
+                <h3 class="font-primary text-3xl font-medium mb-4">Join Our Newsletter Community for Regular Inspiration</h3>
+                <form class="w-full flex items-center h-12">
+                    <input type="email" placeholder="Your email adress" class="bg-white text-writing-color h-full w-full pl-2 rounded-l-lg">
+                    <button type="submit" class="btn-style rounded-l-none! h-full">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="copy-rights mt-20 flex items-center justify-between z-10">
+            <p class="text-sm font-light text-white/50">© 2024 Lifkoach. All rights reserved.</p>
+            <div class="icons flex items-center gap-4 mt-4">
+                <span class="rounded-full w-8 h-8 flex items-center justify-center bg-accent-color">
+                    <i data-lucide="facebook" class="fill-white stroke-0"></i>
+                </span>
+                <span class="rounded-full w-8 h-8 flex items-center justify-center bg-accent-color">
+                    <i data-lucide="linkedin" class="fill-white stroke-0"></i>
+                </span>
+                <span class="rounded-full w-8 h-8 flex items-center justify-center bg-accent-color">
+                    <i data-lucide="instagram" class=""></i>
+                </span>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./menu.js"></script>
+</body>
+</html>

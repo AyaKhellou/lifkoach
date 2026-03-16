@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifkoach</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header class="flex items-center justify-between w-full py-4 px-10 bg-background-color relative z-10">
+        <a href="/"><img class="w-36 mr-4" src="./assets/images/Logo(1).png" alt="Lifkoach Logo"></a>
+        <nav class="flex items-center gap-10 max-md:hidden max-md:flex-col max-md:gap-4 max-md:absolute max-md:top-14 max-md:bg-white max-md:shadow max-md:p-6 max-md:rounded-xl max-md:mr-3 max-md:right-0">
+            <ul class="flex items-center gap-6 text-base font-medium text-writing-color max-md:flex-col max-md:gap-4 ">
+                <li class="text-accent-color transition-all duration-300"><a href="/index.html">Home</a></li>
+                <li class="hover:text-accent-color transition-all duration-300"><a href="/services.html">Services</a></li>
+                <li class="hover:text-accent-color transition-all duration-300"><a href="/blogs.html">Blog</a></li>
+                <li class="hover:text-accent-color transition-all duration-300"><a href="/contact.html">Contact</a></li>
+            </ul>
+        <button class="btn-style max-md:mt-4">
+            <a href="/contact.html">Get Started</a>
+        </button>
+        </nav>
+        <div class="burger-list w-6 cursor-pointer md:hidden">
+            <span class="block w-full h-0.5 bg-accent-color mb-1"></span>
+            <span class="block w-full h-0.5 bg-accent-color mb-1"></span>
+            <span class="block w-full h-0.5 bg-accent-color"></span>
+        </div>
+    </header>
+    <!-- start home page -->
+    <section class="home-page overflow-hidden bg-background-color flex flex-row-reverse items-center justify-center max-lg:flex-col-reverse gap-10 max-lg:gap-16 relative max-lg:p-16 max-sm:px-0 max-sm:pb-0">
+        <img 
+        src="./assets/images/Background-overlay-home.png" 
+        alt="Background Overlay Home" 
+        class="absolute bottom-0 max-lg:top-0 left-0 z-0 w-[65%] max-lg:w-full">
+        
+        <div class="image slide-left h-full w-2/5 max-lg:w-[60%] max-sm:w-full relative max-lg:rounded-2xl max-sm:rounded-none overflow-hidden">
+            <div 
+            class="overlay">
+            <p class="font-semibold">Fiona Hahn</p>
+            <p>Life Coach and Founder Lifekoach</p>
+            </div>
+            <img src="./assets/images/div.elementor-widget-wrap(1).png" 
+            alt="fionna hann life coach"
+            class=" z-10">
+        </div>
+        <div class="info slide-right w-3/5 max-lg:w-full ml-16 max-lg:ml-0 max-sm:px-6 flex py-16 max-lg:py-0 flex-col gap-8 max-lg:gap-10 relative max-lg:items-center">
+            <h1 class="font-primary font-semibold text-writing-color max-lg:text-center">
+                Discover Your Inner Strength and Create a Life You Love
+            </h1>
+            <p class="font-secondary text-lg/snug font-normal text-secondary-writing-color/70 max-lg:text-center">
+                Life coaches will guide you through a transformational journey of self-
+                discovery, helping you identify your unique gifts and talents
+            </p>
+            <button class="btn-style w-max">
+                <a href="/services.html">Explore Services</a>
+            </button>
+        </div>
+    </section>
+    <section class="trusted-companies overflow-hidden flex flex-row max-lg:flex-col gap-10 items-center max-lg:items-start px-16 py-16 max-sm:px-6 font-primary text-2xl font-semibold">
+        <h3 class="heading-3">Trusted by 5K+ <br>
+            companies
+        </h3>
+        <div class="marquee">
+            <div class="companies track flex gap-6">
+                <img src="./assets/images/Colab.png.png" alt="Company Logo 1" class="h-6 ">
+                <img src="./assets/images/Luminous.png.png" alt="Company Logo 2" class="h-6 ">
+                <img src="./assets/images/Minty.png.png" alt="Company Logo 3" class="h-6 ">
+                <img src="./assets/images/Nextmove.png.png" alt="Company Logo 4" class="h-6 ">
+                <img src="./assets/images/Snowflake.png.png" alt="Company Logo 5" class="h-6 ">
+                <img src="./assets/images/Visionpng.png" alt="Company Logo 6" class="h-6 ">
+                <img src="./assets/images/Wrap.png" alt="Company Logo 7" class="h-6 -ml-7 ">
+                <img src="./assets/images/Border.png.png" alt="Company Logo 7" class="h-6 ">
+            </div>
+        </div>
+    </section>
+    <section class="about-me flex max-lg:flex-col items-center justify-between gap-10 max-lg:gap-14 px-16 max-sm:px-6 py-16 relative overflow-hidden">
+        <img 
+        src="./assets/images/mature-businesswoman-working-at-office-e1678089661222.jpg.png" 
+        alt="Fiona Hahn"
+        class="h-auto w-2/5 max-lg:w-2/3 max-md:w-full z-10"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        >
+        <div 
+        class="info w-3/5 max-lg:w-full max-lg:text-center max-lg:items-center flex flex-col gap-8 relative z-10"
+        data-aos="fade-left"
+        data-aos-duration="1000">
+            <h2 class="heading-2">
+                Helping You Create A Life that Aligns with Your Values and Passions
+            </h2>
+            <p class="description">
+                Lifkoach was founded by a team of passionate and experienced life coaches
+                who believe in the power of personal transformation. We offer a range of
+                services to help you ignite your inner fire and create a life you love.
+            </p>
+            <img 
+            src="./assets/images/Signature-3.png(1).png" 
+            alt="Fiona Hahn Signature"
+            class="w-3xs h-auto">
+        </div>
+    </section>
+    <section class="about flex max-lg:flex-col px-16 max-sm:p-6 py-16 gap-10 max-lg:gap-14 items-center relative overflow-hidden">
+        <div 
+        class="info w-3/5 max-lg:w-full flex max-lg:text-center max-lg:items-center flex-col gap-8  relative z-10"
+        data-aos="fade-right"
+        data-aos-duration="1000">
+            <h2 class="heading-2">Your Source for Personal and Professional Development</h2>
+            <p class="description">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                veritatis et quasi architecto beatae vitae dicta.
+            </p>
+            <div class="numbers flex flex-row max-sm:flex-col gap-10 mt-10">
+                <div class="progress flex flex-row items-center gap-4 max-sm:w-4/5">
+                    <svg viewBox="0 0 36 36" width="115" height="115" class="circular-chart">
+                        <path class="circle-bg"
+                            d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            fill="none" stroke="#eee" stroke-width="3" />
+                        <path class="circle" data-percent="92"
+                            stroke-linecap="round"
+                            d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            fill="none" stroke="#8B7EF8" stroke-width="3" />
+                        <text x="9" y="21.5" class="percentage text-[10px] font-semibold fill-writing-color">92%</text>
+                    </svg>
+                    <p class="heading-3 mt-4">Private Coaching</p>
+                </div>
+                <div class="progress flex flex-row items-center gap-4 max-sm:w-4/5">
+                    <svg viewBox="0 0 36 36" width="115" height="115" class="circular-chart">
+                        <path class="circle-bg"
+                            d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            fill="none" stroke="#eee" stroke-width="3" />
+                        <path class="circle" data-percent="87"
+                            stroke-linecap="round"
+                            d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            fill="none" stroke="#8B7EF8" stroke-width="3" />
+                        <text x="9" y="21.5" class="percentage text-[10px] font-semibold fill-writing-color">87%</text>
+                    </svg>
+                    <p class="heading-3 mt-4">Group Program</p>
+                </div>
+            </div>
+        </div>
+        <img 
+        src="./assets/images/businesswoman-working-in-conference-hall.jpg.png" 
+        alt="Businesswoman in Conference Hall"
+        class="w-2/5 max-lg:w-2/3 max-md:w-full h-auto"
+        data-aos="fade-up"
+        data-aos-duration="1000">
+    </section>
+    <section class="services py-16"
+    data-aos="fade-up"
+    data-aos-duration="1000">
+        <div class="title mx-0 my-auto text-center mb-16">
+            <h2 class="heading-2 mb-8">Our Coaching Services</h2>
+            <p class="description">
+                Flexible programs designed to meet you where you are.
+            </p>
+        </div>
+        <div class="cards-container grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-0 ">
+            <div class="card sm:max-lg:order-1 aspect-square bg-background-color flex flex-col items-center justify-center px-12 text-center">
+                <h3 class="font-primary text-[clamp(1.2rem,5cqw,1.8rem)] font-semibold pb-6">Personalized Coaching</h3>
+                <p class="description">Tailored coaching sessions to help you achieve your specific goals and overcome challenges.</p>
+            </div>
+            <div class="image-container overflow-hidden">
+                <img 
+            src="./assets/images/Image-Wrap.png" 
+            alt="Personalized Coaching Image" 
+            class="sm:max-lg:order-2 w-full h-auto aspect-square object-cover hover:scale-125 transition-transform duration-300 ease-in-out">
+            </div>
+            <div class="card sm:max-lg:order-4 aspect-square bg-background-color flex flex-col items-center justify-center px-12 text-center">
+                <h3 class="font-primary text-[clamp(1.2rem,5cqw,1.8rem)] font-semibold pb-6">Mindfulness Training</h3>
+                <p class="description">
+                    Learn to reduce stress, improve focus, and
+                    cultivate inner peace with our mindfulness
+                    training program.
+                </p>
+            </div>
+            <div class="image-container overflow-hidden"">
+                <img 
+            src="./assets/images/Image-Wrap(1).png" 
+            alt="Mindfulness Training Image" 
+            class="sm:max-lg:order-3 w-full h-auto aspect-square object-cover hover:scale-125 transition-transform duration-300 ease-in-out">
+            </div>
+            <div class="card sm:max-lg:order-5 aspect-square bg-background-color flex flex-col items-center justify-center px-12 text-center">
+                <h3 class="font-primary text-[clamp(1.2rem,5cqw,1.8rem)] font-semibold pb-6">Group Coaching</h3>
+                <p class="description">Join our supportive community of like- 
+                    minded individuals and receive group
+                    coaching to gain insights.
+                </p>
+            </div>
+            <div class="image-container overflow-hidden">
+                <img 
+            src="./assets/images/Image-Wrap(3).png" 
+            alt="Group Coaching Image" 
+            class="sm:max-lg:order-6 w-full h-auto aspect-square object-cover hover:scale-125 transition-transform duration-300 ease-in-out">
+        
+            </div>
+            </div>
+        <button class="btn-style block my-10 mx-auto">
+            <a href="/services.html">Learn more</a>
+        </button>
+    </section>
+    <section class="why px-16 max-sm:px-6 py-16 flex flex-col gap-8 align-center">
+        <div class="section-info text-center mb-16"
+        data-aos="fade-up"
+        data-aos-duration="1000">
+            <h2 class="heading-2 mb-8">Why You Need a Life Coach</h2>
+            <p class="description px-16">
+                Whatever your situation, a life coach can help you gain clarity, overcome obstacles, and unlock
+                your full potential. Here are reasons why you might need a life coach
+            </p>
+        </div>
+        <div class="section-details flex max-lg:flex-col gap-8 items-center">
+            <div class="reasons-container flex flex-col w-2/3 max-lg:w-full gap-6">
+                <div class="reason"
+                data-aos="fade-up"
+                data-aos-duration="1000">
+                    <h3 class="heading-3">Gain Clarity and Focus</h3>
+                    <p class="description">A life coach can help you gain clarity on your goals, values, and priorities, and develop a clear action plan to achieve them.</p>
+                </div>
+                <div class="reason"
+                data-aos="fade-up"
+                data-aos-duration="1000">
+                    <h3 class="heading-3">Overcome Obstacles and Challenges</h3>
+                    <p class="description">A life coach can help you identify and overcome obstacles and challenges that may be holding you back, and develop strategies to move forward.</p>
+                </div>
+                <div class="reason"
+                data-aos="fade-up"
+                data-aos-duration="1000">
+                    <h3 class="heading-3">Unlock Your Full Potential</h3>
+                    <p class="description">A life coach can help you identify and leverage your strengths, talents, and resources to unlock your full potential and achieve your goals.</p>
+                </div>
+            </div>
+            <img 
+            src="./assets/images/Tab-Image.png" 
+            alt="Tab Image"
+            class="w-1/3 max-lg:w-2/3 max-md:w-full h-auto"
+            data-aos="fade-up"
+            data-aos-duration="1000">
+        </div>
+    </section>
+    <section class="testimonials flex flex-row max-lg:flex-col px-16 py-16 max-sm:px-6 gap-10 bg-background-color relative">
+        <img 
+        src="./assets/images/testimonials-overlay.png" 
+        alt="Testimonials Overlay"
+        class="absolute top-0 left-0 z-0">
+        <div class="info">
+            <h2 class="heading-2 mb-10"
+            data-aos="fade-up"
+            data-aos-duration="1000">See What Our Clients Have
+                Achieved and Get Inspired to Reach Your Own Goals
+            </h2>
+            <div class="rating"
+            data-aos="fade-up"
+            data-aos-duration="1000">
+                <div class="stars flex items-center gap-2 mb-4">
+                    <i data-lucide="star" class="w-5 h-5 text-accent-color"></i>
+                    <i data-lucide="star" class="w-5 h-5 text-accent-color"></i>
+                    <i data-lucide="star" class="w-5 h-5 text-accent-color"></i>
+                    <i data-lucide="star" class="w-5 h-5 text-accent-color"></i>
+                    <i data-lucide="star" class="w-5 h-5 text-accent-color"></i>
+                </div>
+                <p class="description"
+                data-aos="fade-up"
+                data-aos-duration="1000">
+                    <span class="font-bold">4.7 out of 5 stars</span>
+                    from 1.2k reviews
+                </p>
+            </div>
+        </div>
+            <div class="comments flex flex-col gap-6 z-10">
+                <div class="content flex max-sm:flex-col items-center bg-white rounded-lg shadow-lg overflow-hidden"
+                data-aos="fade-up"
+                data-aos-duration="1000">
+                    <img 
+                    src="./assets/images/testimonial-1.png" 
+                    alt="Comment Image"
+                    class="aspect-9/16 max-md:w-1/2 max-sm:w-full max-sm:aspect-square h-full w-1/3 object-cover">
+                    <div class="comment w-2/3 max-sm:w-full flex flex-col gap-6 p-6">
+                        <i data-lucide="quote" class="w-16 h-auto fill-brand stroke-0 rotate-180"></i>
+                        <p class="description">
+                            Sed ut perspiciatis unde omnis iste
+                            natus error sit doloremque, totam rem
+                            aperiam, eaque ipsa quae ab illo
+                            inventore veritatis et quasi.
+                        </p>
+                        <p class="author-name font-primary font-semibold text-writing-color">Howard Woods</p>
+                        <p class="description author-role">Lead Developer</p>
+                    </div>
+                </div>
+                <div class="content flex max-sm:flex-col items-center bg-white rounded-lg shadow-lg overflow-hidden"
+                data-aos="fade-up"
+                data-aos-duration="1000">
+                    <img 
+                    src="./assets/images/testimonial-2.png" 
+                    alt="Comment Image"
+                    class="aspect-9/16 max-md:w-1/2 max-sm:w-full max-sm:aspect-square h-full w-1/3 object-cover">
+                    <div class="comment w-2/3 max-sm:w-full flex flex-col gap-6 p-6">
+                        <i data-lucide="quote" class="w-16 h-auto fill-brand stroke-0 rotate-180"></i>
+                        <p class="description">
+                            Sed ut perspiciatis unde omnis iste
+                            natus error sit doloremque, totam rem
+                            aperiam, eaque ipsa quae ab illo
+                            inventore veritatis et quasi.
+                        </p>
+                        <p class="author-name font-primary font-semibold text-writing-color">Howard Woods</p>
+                        <p class="description author-role">Lead Developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-footer flex max-lg:flex-col items-center overflow-hidden">
+        <div class="image w-[45%] max-lg:w-full h-full relative"
+        data-aos="fade-right"
+        data-aos-duration="1000">
+            <img 
+            src="./assets/images/session-image.png" 
+            alt="Session Image"
+            class="h-full w-full object-cover">
+            <div class="overlay top-0">
+                <p class="heading-3 text-white">Achieve goals and create positive change</p>
+                <p class="description text-white/80">May 12th-14th, 2023</p>
+            </div>
+        </div>
+        <div class="details w-[55%] max-lg:w-full max-lg:p-16 px-10 max-sm:p-6 gap-6 flex flex-col"
+        data-aos="fade-left"
+        data-aos-duration="1000">
+            <h2 class="heading-2 text-white!">
+                Dare to Dream Big and Step into Your Power to Achieve Your Goals
+            </h2>
+            <p class="description text-white/70!">
+                Our life coaching services are designed to help you unlock your full potential and create a life you love.
+            </p>
+            <div class="separator w-full h-0.5 bg-white/20"></div>
+            <div class="mentors flex items-start">
+                <i data-lucide="circle-check" 
+                class="w-20 h-auto fill-accent-color stroke-footer mt-0.5 mr-3"></i>
+                <div>
+                    <h3 class="heading-3 text-white!">
+                        Licensed Mentors
+                    </h3>
+                    <p class="description text-white/70!">
+                        Our team of experienced and licensed mentors are dedicated to helping you achieve your goals and create a life you love. With personalized coaching sessions.
+                    </p>
+                </div>
+            </div>
+            <div class="mentors flex items-start">
+                <i data-lucide="circle-check" 
+                class="w-20 h-auto fill-accent-color stroke-footer mt-0.5 mr-3"></i>
+                <div>
+                    <h3 class="heading-3 text-white!">
+                        Hight Performance
+                    </h3>
+                    <p class="description text-white/70!">
+                        Our team of experienced and licensed mentors are dedicated to helping you achieve your goals and create a life you love. With personalized coaching sessions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- book purchase -->
+    <section class="flex max-lg:flex-col px-16 py-16 max-sm:px-6 gap-8 items-center relative overflow-hidden">
+        <div class="info w-3/5 max-lg:w-full flex flex-col items-start max-lg:items-center max-lg:text-center gap-8"
+        data-aos="fade-right"
+        data-aos-duration="1000">
+            <h2 class="heading-2">Discovering Your Purpose and Achieving Your Dreams</h2>
+            <p class="description">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo 
+                inventore veritatis et quasi architecto beatae vitae dicta.
+            </p>
+            <button class="btn-style">Purchase Book</button>
+        </div>
+        <img 
+        src="./assets/images/book.png" 
+        alt=""
+        class="w-2/5 max-lg:w-2/3 max-md:w-full h-auto"
+        data-aos="fade-up"
+    data-aos-duration="1000">
+    </section>
+    <section class="CTA bg-background-color flex flex-col items-center gap-8 py-16 px-16 max-sm:px-6 relative"
+    data-aos="fade-up"
+    data-aos-duration="1000">
+        <img 
+        src="./assets/images/CTA-overlay.png" 
+        alt="CTA Background Overlay"
+        class="absolute bottom-0 z-0">
+        <h2 class="heading-2 relative z-10 text-center">Become the Best Version of Yourself</h2>
+        <p class="description w-2/3 max-md:w-full text-center relative z-10">
+            We are here to help you reach your goals. Sign up for a free consultation today to
+            discover how we can help you on your journey.
+        </p>
+        <button class="btn-style mt-6 z-10">Book a free call</button>
+    </section>
+    <footer class="bg-footer text-white py-8 px-16 max-md:px-8 max-sm:px-4 relative overflow-hidden flex flex-col">
+        <img src="./assets/images/Background-Overlay-footer.png" class="absolute bottom-0 left-0 z-0" alt="">
+        <div class="z-10 links">
+            <ul class="text-white font-primary text-base font-light flex max-sm:flex-wrap max-sm:justify-center items-center justify-end gap-6 pt-4 pb-16">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/services.html">Services</a></li>
+                <li><a href="/blogs.html">Blog</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="separator w-full h-px bg-white"></div>
+        <div class="z-10 details flex max-md:flex-wrap items-start justify-center pt-16 gap-10">
+            <div class="support z-10 w-1/4 max-md:w-[45%] max-sm:w-full">
+                <h3 class="font-primary text-2xl font-medium mb-6">Support</h3>
+                <ul class="flex flex-col gap-4">
+                    <li>Help Center</li>
+                    <li>Privacy Policy</li>
+                    <li>FAQ</li>
+                    <li>Terms & Conditions</li>
+                    <li>Community</li>
+                </ul>
+            </div>
+            <div class="z-10 contact w-1/4 max-md:w-[45%] max-sm:w-full">
+                <h3 class=" font-primary text-2xl font-medium mb-4">Contact</h3>
+                <div class="contact-details flex flex-col gap-6">
+                    <div class="location flex items-center gap-3">
+                        <i data-lucide="map-pin" class="min-w-6 min-h-6 text-accent-color"></i>
+                        <span class="">Jl. Umalas 1 No.3, Kerobokan Kelod, Badung, Bali</span>
+                    </div>
+                    <div class="phone flex items-center gap-3">
+                        <i data-lucide="phone" class="min-w-6 min-h-6 text-accent-color"></i>
+                        <span>+62 812 3456 7890</span>
+                    </div>
+                    <div class="mail flex items-center gap-3">
+                        <i data-lucide="mail" class="min-w-6 min-h-6 text-accent-color"></i>
+                        <span>info@lifkoach.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="community w-1/2 z-10 max-md:w-full">
+                <h3 class="font-primary text-3xl font-medium mb-4">Join Our Newsletter Community for Regular Inspiration</h3>
+                <form class="w-full flex items-center h-12">
+                    <input type="email" placeholder="Your email adress" class="bg-white text-writing-color h-full w-full pl-2 rounded-l-lg">
+                    <button type="submit" class="btn-style rounded-l-none! h-full">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="copy-rights mt-20 flex items-center justify-between z-10">
+            <p class="text-sm font-light text-white/50">© 2024 Lifkoach. All rights reserved.</p>
+            <div class="icons flex items-center gap-4 mt-4">
+                <span class="rounded-full w-8 h-8 flex items-center justify-center bg-accent-color">
+                    <i data-lucide="facebook" class="fill-white stroke-0"></i>
+                </span>
+                <span class="rounded-full w-8 h-8 flex items-center justify-center bg-accent-color">
+                    <i data-lucide="linkedin" class="fill-white stroke-0"></i>
+                </span>
+                <span class="rounded-full w-8 h-8 flex items-center justify-center bg-accent-color">
+                    <i data-lucide="instagram" class=""></i>
+                </span>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./menu.js"></script>
+</body>
+</html>

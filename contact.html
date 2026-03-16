@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header class="flex items-center justify-between w-full py-4 px-10 bg-background-color relative">
+        <a href="/"><img class="w-36 mr-4" src="./assets/images/Logo(1).png" alt="Lifkoach Logo"></a>
+        <nav class="flex items-center gap-10 max-md:hidden max-md:flex-col max-md:gap-4 max-md:absolute max-md:top-14 max-md:bg-white max-md:shadow max-md:p-6 max-md:rounded-xl max-md:mr-3 max-md:right-0">
+            <ul class="flex items-center gap-6 text-base font-medium text-writing-color max-md:flex-col max-md:gap-4 ">
+                <li class="hover:text-accent-color transition-all duration-300"><a href="/index.html">Home</a></li>
+                <li class="hover:text-accent-color transition-all duration-300"><a href="/services.html">Services</a></li>
+                <li class="hover:text-accent-color transition-all duration-300"><a href="/blogs.html">Blog</a></li>
+                <li class="text-accent-color transition-all duration-300"><a href="/contact.html">Contact</a></li>
+            </ul>
+        <button class="btn-style max-md:mt-4">
+            <a href="/services.html">Get Started</a>
+        </button>
+        </nav>
+        <div class="burger-list w-6 cursor-pointer md:hidden">
+            <span class="block w-full h-0.5 bg-accent-color mb-1"></span>
+            <span class="block w-full h-0.5 bg-accent-color mb-1"></span>
+            <span class="block w-full h-0.5 bg-accent-color"></span>
+        </div>
+    </header>
+    <!-- intro -->
+    <section class="intro bg-background-color py-16 px-16 max-sm:px-6 flex flex-col items-center gap-6 text-center">
+        <h2 class="heading-2  fade-in-bottom w-1/2 max-md:w-2/3 max-sm:w-full">Get in Touch with Us</h2>
+        <p class="description fade-in-bottom w-1/2 max-md:w-2/3 max-sm:w-full">
+            Ready to start your transformation journey? We'd love to hear from you. Schedule a free consultation or send us a message.
+        </p>
+    </section>
+    <!-- contact section -->
+    <section class="contact-section flex max-md:flex-col max-md:items-center flex-row items-stretch justify-center px-16 py-16 max-sm:px-6 gap-8 bg-white">
+        <!-- Contact Form Part -->
+        <div class="w-full max-w-lg flex flex-col gap-8 justify-center"
+        data-aos="fade-right"
+    data-aos-duration="1000">
+            <h3 class="heading-3 text-writing-color mb-4">Contact Us</h3>
+            <!-- Contact Form -->
+            <form class="contact-form flex flex-col gap-6 bg-background-color p-8 max-sm:p-4 rounded-lg shadow-md">
+                <!-- Name Fields -->
+                <div class="name flex gap-2">
+                    <div class="flex w-1/2 flex-col gap-2">
+                        <label for="first-name" class="font-medium text-writing-color">First Name</label>
+                        <input type="text" id="first-name" name="first-name" required class="input-style p-3 rounded border border-gray-300 focus:border-accent-color focus:outline-none">
+                    </div>
+                    <div class="flex w-1/2 flex-col gap-2">
+                        <label for="last-name" class="font-medium text-writing-color">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" required class="input-style p-3 rounded border border-gray-300 focus:border-accent-color focus:outline-none">
+                    </div>
+                </div>
+                <!-- Email Field -->
+                <div class="flex flex-col gap-2">
+                    <label for="email" class="font-medium text-writing-color">Email Address</label>
+                    <input type="email" id="email" name="email" required class="input-style p-3 rounded border border-gray-300 focus:border-accent-color focus:outline-none">
+                </div>
+                <!-- Phone Field -->
+                <div class="flex flex-col gap-2">
+                    <label for="phone" class="font-medium text-writing-color">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required class="input-style p-3 rounded border border-gray-300 focus:border-accent-color focus:outline-none">
+                </div>
+                <!-- Service Dropdown -->
+                <div class="flex flex-col gap-2">
+                    <label for="service" class="font-medium text-writing-color">Service Interested In</label>
+                    <select id="service" name="service" required class="input-style cursor-pointer p-4 rounded border border-gray-300 focus:border-accent-color focus:outline-none">
+                        <option disabled selected>Select a service</option>
+                        <option value="coaching">Coaching</option>
+                        <option value="consulting">Consulting</option>
+                        <option value="workshops">Workshops</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <!-- Message Field -->
+                <div class="flex flex-col gap-2">
+                    <label for="message" class="font-medium text-writing-color">Message</label>
+                    <textarea id="message" name="message" rows="5" required class="input-style p-3 rounded border border-gray-300 focus:border-accent-color focus:outline-none"></textarea>
+                </div>
+                <!-- Submit Button -->
+                <button class="btn-style mt-4">Send Message</button>
+            </form>
+        </div>
+        <!-- Contact Information Part -->
+        <div class="w-full max-w-md flex flex-col gap-8  rounded-lg"
+        data-aos="fade-left"
+    data-aos-duration="1000">
+            <h3 class="heading-3 text-writing-color mb-4">Contact Information</h3>
+            <!-- Contact Info Cards -->
+            <div class="contact-cards flex flex-col gap-6">
+                <!-- Address Card -->
+                <div class="card flex items-center gap-4 bg-background-color p-4 rounded-lg shadow ">
+                    <span class="icon text-accent-color text-2xl"><i data-lucide="map-pin"></i></span>
+                    <div class="flex flex-col">
+                        <span class="font-medium text-writing-color">Address</span>
+                        <span class="text-gray-700">123 Lifkoach Street, City, Country</span>
+                    </div>
+                </div>
+                <!-- Phone Card -->
+                <div class="card flex items-center gap-4 bg-background-color p-4 rounded-lg shadow">
+                    <span class="icon text-accent-color text-2xl"><i data-lucide="phone"></i></span>
+                    <div class="flex flex-col">
+                        <span class="font-medium text-writing-color">Phone</span>
+                        <span class="text-gray-700">+1 234 567 8900</span>
+                    </div>
+                </div>
+                <!-- Email Card -->
+                <div class="card flex items-center gap-4 bg-background-color p-4 rounded-lg shadow">
+                    <span class="icon text-accent-color text-2xl"><i data-lucide="mail"></i></span>
+                    <div class="flex flex-col">
+                        <span class="font-medium text-writing-color">Email</span>
+                        <span class="text-gray-700">info@lifkoach.com</span>
+                    </div>
+                </div>
+                <!-- Office Hours Card -->
+                <div class="card bg-background-color p-4 rounded-lg shadow">
+                    <div class="title flex gap-4 pb-4">
+                        <span class="icon text-accent-color text-2xl"><i data-lucide="clock"></i></span>
+                        <span class="font-medium text-writing-color">Office Hours</span>
+                    </div>
+                    <!-- Office Hours Horizontal Cards -->
+                    <div class="flex flex-col gap-2">
+                        <div class="hour-card flex flex-col items-center bg-white p-2 rounded w-full">
+                            <span class="font-medium text-writing-color text-sm">Mon - Fri</span>
+                            <span class="text-gray-700 text-xs">9:00 AM - 6:00 PM</span>
+                        </div>
+                        <div class="hour-card flex flex-col items-center bg-white p-2 rounded w-full">
+                            <span class="font-medium text-writing-color text-sm">Saturday</span>
+                            <span class="text-gray-700 text-xs">10:00 AM - 2:00 PM</span>
+                        </div>
+                        <div class="hour-card flex flex-col items-center bg-white p-2 rounded w-full">
+                            <span class="font-medium text-writing-color text-sm">Sunday</span>
+                            <span class="text-gray-700 text-xs">Closed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+    <!-- CTA -->
+    <section class="CTA bg-background-color flex flex-col items-center gap-8 py-16 px-16 max-sm:px-6 relative"
+    data-aos="fade-up"
+    data-aos-duration="1000">
+        <img 
+        src="./assets/images/CTA-overlay.png" 
+        alt="CTA Background Overlay"
+        class="absolute bottom-0 z-0">
+        <h2 class="heading-2 relative z-10 text-center">Become the Best Version of Yourself</h2>
+        <p class="description w-2/3 max-md:w-full text-center relative z-10">
+            We are here to help you reach your goals. Sign up for a free consultation today to
+            discover how we can help you on your journey.
+        </p>
+        <button class="btn-style mt-6 z-10">Book a free call</button>
+    </section>
+    <footer class="bg-footer text-white py-8 px-16 max-md:px-8 max-sm:px-4 relative overflow-hidden flex flex-col">
+        <img src="./assets/images/Background-Overlay-footer.png" class="absolute bottom-0 left-0 z-0" alt="">
+        <div class="z-10 links">
+            <ul class="text-white font-primary text-base font-light flex max-sm:flex-wrap max-sm:justify-center items-center justify-end gap-6 pt-4 pb-16">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/services.html">Services</a></li>
+                <li><a href="/blogs.html">Blog</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="separator w-full h-px bg-white"></div>
+        <div class="z-10 details flex max-md:flex-wrap items-start justify-center pt-16 gap-10">
+            <div class="support z-10 w-1/4 max-md:w-[45%] max-sm:w-full">
+                <h3 class="font-primary text-2xl font-medium mb-6">Support</h3>
+                <ul class="flex flex-col gap-4">
+                    <li>Help Center</li>
+                    <li>Privacy Policy</li>
+                    <li>FAQ</li>
+                    <li>Terms & Conditions</li>
+                    <li>Community</li>
+                </ul>
+            </div>
+            <div class="z-10 contact w-1/4 max-md:w-[45%] max-sm:w-full">
+                <h3 class=" font-primary text-2xl font-medium mb-4">Contact</h3>
+                <div class="contact-details flex flex-col gap-6">
+                    <div class="location flex items-center gap-3">
+                        <i data-lucide="map-pin" class="min-w-6 min-h-6 text-accent-color"></i>
+                        <span class="">Jl. Umalas 1 No.3, Kerobokan Kelod, Badung, Bali</span>
+                    </div>
+                    <div class="phone flex items-center gap-3">
+                        <i data-lucide="phone" class="min-w-6 min-h-6 text-accent-color"></i>
+                        <span>+62 812 3456 7890</span>
+                    </div>
+                    <div class="mail flex items-center gap-3">
+                        <i data-lucide="mail" class="min-w-6 min-h-6 text-accent-color"></i>
+                        <span>info@lifkoach.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="community w-1/2 z-10 max-md:w-full">
+                <h3 class="font-primary text-3xl font-medium mb-4">Join Our Newsletter Community for Regular Inspiration</h3>
+                <form class="w-full flex items-center h-12">
+                    <input type="email" placeholder="Your email adress" class="bg-white text-writing-color h-full w-full pl-2 rounded-l-lg">
+                    <button type="submit" class="btn-style rounded-l-none! h-full">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="copy-rights mt-20 flex items-center justify-between z-10">
+            <p class="text-sm font-light text-white/50">© 2024 Lifkoach. All rights reserved.</p>
+            <div class="icons flex items-center gap-4 mt-4">
+                <span class="rounded-full w-8 h-8 flex items-center justify-center bg-accent-color">
+                    <i data-lucide="facebook" class="fill-white stroke-0"></i>
+                </span>
+                <span class="rounded-full w-8 h-8 flex items-center justify-center bg-accent-color">
+                    <i data-lucide="linkedin" class="fill-white stroke-0"></i>
+                </span>
+                <span class="rounded-full w-8 h-8 flex items-center justify-center bg-accent-color">
+                    <i data-lucide="instagram" class=""></i>
+                </span>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./menu.js"></script>
+</body>
+</html>

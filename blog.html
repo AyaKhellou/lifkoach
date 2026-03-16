@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="flex items-center justify-between w-full py-4 px-10 bg-background-color relative">
+        <a href="/"><img class="w-36 mr-4" src="./assets/images/Logo(1).png" alt="Lifkoach Logo"></a>
+        <nav class="flex items-center gap-10 max-md:hidden max-md:flex-col max-md:gap-4 max-md:absolute max-md:top-14 max-md:bg-white max-md:shadow max-md:p-6 max-md:rounded-xl max-md:mr-3 max-md:right-0">
+            <ul class="flex items-center gap-6 text-base font-medium text-writing-color max-md:flex-col max-md:gap-4 ">
+                <li class="hover:text-accent-color transition-all duration-300"><a href="/index.html">Home</a></li>
+                <li class="hover:text-accent-color transition-all duration-300"><a href="/services.html">Services</a></li>
+                <li class="hover:text-accent-color transition-all duration-300"><a href="/blogs.html">Blog</a></li>
+                <li class="hover:text-accent-color transition-all duration-300"><a href="/contact.html">Contact</a></li>
+            </ul>
+        <button class="btn-style max-md:mt-4">
+            <a href="/services.html">Get Started</a>
+        </button>
+        </nav>
+        <div class="burger-list w-6 cursor-pointer md:hidden">
+            <span class="block w-full h-0.5 bg-accent-color mb-1"></span>
+            <span class="block w-full h-0.5 bg-accent-color mb-1"></span>
+            <span class="block w-full h-0.5 bg-accent-color"></span>
+        </div>
+    </header>
+    <!-- intro -->
+    <section class="intro bg-background-color py-16 px-16 max-sm:px-6 flex flex-col items-center gap-6 text-center">
+    </section>
+    <div id="post-container" class="max-w-4xl mx-auto px-16 py-16 max-sm:px-6"></div>
+    
+    <footer class="bg-footer text-white py-8 px-16 max-md:px-8 max-sm:px-4 relative overflow-hidden flex flex-col">
+        <img src="./assets/images/Background-Overlay-footer.png" class="absolute bottom-0 left-0 z-0" alt="">
+        <div class="z-10 links">
+            <ul class="text-white font-primary text-base font-light flex max-sm:flex-wrap max-sm:justify-center items-center justify-end gap-6 pt-4 pb-16">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/services.html">Services</a></li>
+                <li><a href="/blogs.html">Blog</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="separator w-full h-px bg-white"></div>
+        <div class="z-10 details flex max-md:flex-wrap items-start justify-center pt-16 gap-10">
+            <div class="support z-10 w-1/4 max-md:w-[45%] max-sm:w-full">
+                <h3 class="font-primary text-2xl font-medium mb-6">Support</h3>
+                <ul class="flex flex-col gap-4">
+                    <li>Help Center</li>
+                    <li>Privacy Policy</li>
+                    <li>FAQ</li>
+                    <li>Terms & Conditions</li>
+                    <li>Community</li>
+                </ul>
+            </div>
+            <div class="z-10 contact w-1/4 max-md:w-[45%] max-sm:w-full">
+                <h3 class=" font-primary text-2xl font-medium mb-4">Contact</h3>
+                <div class="contact-details flex flex-col gap-6">
+                    <div class="location flex items-center gap-3">
+                        <i data-lucide="map-pin" class="min-w-6 min-h-6 text-accent-color"></i>
+                        <span class="">Jl. Umalas 1 No.3, Kerobokan Kelod, Badung, Bali</span>
+                    </div>
+                    <div class="phone flex items-center gap-3">
+                        <i data-lucide="phone" class="min-w-6 min-h-6 text-accent-color"></i>
+                        <span>+62 812 3456 7890</span>
+                    </div>
+                    <div class="mail flex items-center gap-3">
+                        <i data-lucide="mail" class="min-w-6 min-h-6 text-accent-color"></i>
+                        <span>info@lifkoach.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="community w-1/2 z-10 max-md:w-full">
+                <h3 class="font-primary text-3xl font-medium mb-4">Join Our Newsletter Community for Regular Inspiration</h3>
+                <form class="w-full flex items-center h-12">
+                    <input type="email" placeholder="Your email adress" class="bg-white text-writing-color h-full w-full pl-2 rounded-l-lg">
+                    <button type="submit" class="btn-style rounded-l-none! h-full">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="copy-rights mt-20 flex items-center justify-between z-10">
+            <p class="text-sm font-light text-white/50">© 2024 Lifkoach. All rights reserved.</p>
+            <div class="icons flex items-center gap-4 mt-4">
+                <span class="rounded-full w-8 h-8 flex items-center justify-center bg-accent-color">
+                    <i data-lucide="facebook" class="fill-white stroke-0"></i>
+                </span>
+                <span class="rounded-full w-8 h-8 flex items-center justify-center bg-accent-color">
+                    <i data-lucide="linkedin" class="fill-white stroke-0"></i>
+                </span>
+                <span class="rounded-full w-8 h-8 flex items-center justify-center bg-accent-color">
+                    <i data-lucide="instagram" class=""></i>
+                </span>
+            </div>
+        </div>
+    </footer>
+    <script src="blog.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="./menu.js"></script>
+</body>
+</html>
